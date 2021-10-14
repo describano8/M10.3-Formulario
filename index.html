@@ -72,7 +72,7 @@
                    @blur="Validation($event.target.value)"
                    :class="{'form-control':true, 'is-invalid': errors}" 
                    @input="$emit('update', $event.target.value)"/>   
-          <div v-if="!value" class="invalid-feedback">Please enter something.</div>
+          <div v-if="!value" class="invalid-feedback">Por favor, introduzca un valor</div>
           <div v-else="errors" class="invalid-feedback">Este formato es incorrecto. Por favor, inserte un {{ label }} válido</div>
         </div>
       </template>
